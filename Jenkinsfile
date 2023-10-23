@@ -1,9 +1,9 @@
 pipeline {
-    agent none
+    agent any
     stages {
-        stage('SCM') {
+        stage('checkout') {
             steps {
-              sh 'git clone https://github.com/USERNITHYA/hello-world-war.git'
+                sh 'git clone https://github.com/USERNITHYA/hello-world-war.git'
             }
         }
     }
